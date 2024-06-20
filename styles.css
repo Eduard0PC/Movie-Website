@@ -60,7 +60,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: calc(100vh - 80px); /* Adjust according to header height */
+    height: calc(100vh - 80px); 
     padding: 20px;
     background-image: radial-gradient(circle at center center, rgb(71, 71, 71),rgb(8, 8, 8));
 }
@@ -156,4 +156,38 @@ nav ul li a {
 .movie-info p {
     font-size: 1em;
     color: #666;
+}
+
+/*Media Queries*/
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .actions {
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .imagen-banner {
+        margin-top: 20px;
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+
+    .banner {
+        height: auto;
+        padding: 20px 0;
+        flex-direction: column;
+    
+    }
+
+
+    .movie-card {
+        width: 45%;
+    }
+
 }
