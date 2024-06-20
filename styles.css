@@ -15,8 +15,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #000;
-    box-shadow: 0 2px 4px rgba(255,255,255,0.1);
+    background-image: linear-gradient(66deg, transparent 0%, transparent 24%,rgba(195, 195, 195,0.04) 24%, rgba(195, 195, 195,0.04) 80%,transparent 80%, transparent 100%),linear-gradient(153deg, transparent 0%, transparent 29%,rgba(195, 195, 195,0.04) 29%, rgba(195, 195, 195,0.04) 45%,transparent 45%, transparent 100%),linear-gradient(199deg, transparent 0%, transparent 32%,rgba(195, 195, 195,0.04) 32%, rgba(195, 195, 195,0.04) 59%,transparent 59%, transparent 100%),linear-gradient(277deg, transparent 0%, transparent 56%,rgba(195, 195, 195,0.04) 56%, rgba(195, 195, 195,0.04) 57%,transparent 57%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
 }
 
 .logo img {
@@ -35,17 +39,21 @@ nav ul li a {
     font-weight: bold;
 }
 
-.user-actions {
+.actions {
     display: flex;
     gap: 10px;
 }
 
-.user-actions button {
-    background: none;
-    border: none;
-    font-size: 20px;
+.actions .search{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.actions .user img{
+    height: 40px;
     cursor: pointer;
-    color: #fff;
 }
 
 .banner {
@@ -117,6 +125,7 @@ nav ul li a {
 }
 
 .movie-card {
+    text-decoration: none;
     background-color: #fff;
     color: #000;
     border-radius: 10px;
